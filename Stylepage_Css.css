@@ -1,23 +1,56 @@
+/*  The body and heading tags are accessed by all the pages and this 
+means that all the pages are uniform. I have used 2 seperate fonts in 
+this task, the second font is called as a class when needed but the
+main one is set in the body tag. Margin is the space around an elements
+border whereas padding is the space between the element's content and the
+element. 
+ */
+
 
 body {
     margin: 20;
     background: #494d5f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.font {
+    font-family: arial ;
+}
+
 h1 {
 
     color: #a0d2eb;
     margin-left: 20px;
-    /* margin-top: 20px; */
     text-align: center;
 }
+
+h2 {
+    color: #a0d2eb;
+    padding-left: 30px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+
+
+/* Location: landing page
+
+All of these attributes are related to the navigation bar.
+
+ */
+
 
 .navigation h1 {
     color: #a0d2eb;
     display: inline-block;
     padding-top: 12px;
     text-align: center;
-
-    
 }
 
 .navigation {
@@ -31,10 +64,11 @@ h1 {
 
 header {
     background: #845883;
-    position: sticky;
+    position: sticky; /*@why elements can only be given tags because of this */
     z-index: 100;
 }
 
+/* formatting the nav bar so elements can be ajusted*/
 header::after {
     content: '';
     display: table;
@@ -44,44 +78,36 @@ header::after {
 .Logo {
     float: left;
     margin: 15px;
-
 }
-
 
 nav {
     float: right;
-
 }
 
 nav ul {
     margin: 20;
     padding: 0;
     list-style: none;
-
-
 }
 
 nav li {
     display: inline-block;
     margin-left: 20px;
     padding-top: 25px;
-
     position: relative;
-
 }
 
 nav ul li a {
     color: #e5eaf5;
     text-transform: uppercase;
     text-decoration: none;
-
-    
 }
 
 nav ul li a:hover {
     color: #000;
 }
 
+/* this is the sliding bar animation when you hover on nav bar*/
 nav ul li a::before {
     content: '';
     display: block;
@@ -97,3 +123,185 @@ nav ul li a::before {
 nav ul li a:hover::before {
     width: 100%;
 }
+
+/*margin auto centers the element to the page*/
+.Uolpiccenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutme {
+    color: #e5eaf5;
+    background-color: #845883;
+    border-radius: 8px;
+    margin-left: 60px;
+    padding: 8px;
+    padding-left: 20px;
+    float: left;
+    width: 60%;
+}
+
+.aboutproject {
+    color: #e5eaf5;
+    background-color: #845883;
+    border-radius: 8px;
+    margin-right: 60px;
+    padding: 8px;
+    padding-left: 20px;
+    margin-bottom: 100px;
+    float: right;
+    width: 60%;
+}
+
+.h1position {
+    margin-left: 60px;
+
+}
+
+.h2position {
+    padding-top: 80px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+/*Location: map page ;
+
+
+
+general positioning of the map and border for nice look*/
+.mapborder {
+    border: 10px solid #845883;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.mapfact {
+    color: #a0d2eb;
+    position: sticky;
+    text-align: center;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*Location: PDP page;*/
+
+.studentinfo {
+    color: #e5eaf5;
+    background-color: #845883;
+    border-radius: 8px ;
+    padding: 15px;
+    margin: auto;
+    width: 60%;
+
+}
+
+/*@desc set color for main heading tag. Why: ease of code and use*/
+span.headingtag {
+    color: #a0d2eb;
+}
+
+/*border tag for the table gives the border only for the table
+so the table is inside a frame, this way a border can be added*/
+.frame {
+    border: 8px solid #845883;
+    border-radius: 8px;
+    width: 85%;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+.inputborder {
+    border-radius: 4px;
+}
+
+/*@desc table data and table heading tag
+table heading make the text bold amongst other things 
+this makes it stand out*/
+td,th {
+    border: 2px solid black;
+    padding: 10px 55px;
+    border-radius: 8px;
+}
+
+table {
+    color: #e5eaf5;
+    background-color: #845883;
+    border: 3px solid black;
+    border-radius: 10px;
+    border-collapse: collapse;/*hides all individual borders for each
+    element, gives a clean seamless look*/
+}
+
+
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+/*Location: contact page*/
+
+.contactme {
+    color: #a0d2eb;
+    background-color: #845883;
+    border-radius: 15px ;
+    padding: 8px;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    margin: auto;
+    width: 28%;
+    text-align: center;
+}
+
+/* '#' is used when you reference id tag instead of class*/
+#comment {
+    resize: none;
+    border-radius: 8px;
+}
+
+/*the position of the button on the screen;
+the code is custom but referenced: https://codepen.io/christophwessels/pen/YbbaEj?html-preprocessor=pug*/
+
+.sendbtnpos {
+    text-align: center;
+}
+
+.sendbtn {
+    appearance: none;
+    cursor: pointer;
+    padding: 12px;
+    min-width: 100px;
+    border: 0px;
+    transition: background-color 250ms linear;
+}
+
+.sendbtn:focus, .sendbtn.focus {
+    outline: 0;
+}
+
+.sendbtn {
+    background: #845883;
+    color: #e5eaf5;
+    border-radius: 20px;
+}
+  
+.sendbtn:hover {
+    background: #6d366c;
+    color: #e5eaf5;
+}
+

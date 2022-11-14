@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- defining the HTML basics, setting the webpage icon, character set and calling the Css file -->
 <head>
     <link rel="stylesheet" href="Stylepage_Css.css">
     <link rel="icon" href="UniOfLeicesterCrest.svg">
@@ -10,13 +11,21 @@
 
 <body>
 
+<!-- headers contain naviational tags or introductory elements -->
 <header>
 
     <div class="navigation">
+        <!-- 
+            defining the logo and characteristics
+             'a' tag has a 'href' element, this links to the main landing page when pressed
+         -->
         <a href="LandingPage.html"><img src="RedBlockUoLlogo.jpg" title="University Of Leicester" alt="UOL_Logo" class="Logo" width="200" height="auto"></a>
-        <h1 id="PDP_title">Personal Development Plan</h1>
+        <h1 id="PDP_title">PDP Page</h1>
+
+        <!-- an unordered list for the navigation menu nav defines navigation links-->
         <nav>
             <ul>
+                <!-- each link is allocated to an HTML file which loads a differnt page, 'a' tags are used for hyperlinks and file references -->
                 <li><a href="LandingPage.html">Home</a></li>
                 <li><a href="PDPPage.html">PDP</a></li>
                 <li><a href="MapPage.html">Map</a></li>
@@ -26,8 +35,66 @@
     </div>
 
 </header>
-<h1>PDP Page</h1>
 
+    <h1>Student Personal Development Plan</h1>
+
+    <div class="studentinfo">
+        <!-- p tag is for paragraphs, a span is a global variable like class, used to assign
+        attributes, here it is used to make the text a blue colour -->
+        <p><span class="headingtag">Name:</span> Uday</p>
+        <p><span class="headingtag"> Id:</span> 229020388</p>
+        <p><span class="headingtag">Period Covered:</span> 2 semesters (Sept 2022 - May/June 2023)</p>
+        <p><span class="headingtag">Appraiser:</span>  Yuan, Bo (Dr.)</p>
+
+    </div><br><br>
+<!-- br tags are break lines in HTML, empty spaces. -->
+
+    <!-- a frame is used to hold the table inside, this is so a border can be assigned 
+    without changing the table border. table elements hold rows and colums that display
+    information -->
+
+    <div class="frame">
+        <table>
+            <div class="table">
+                <!-- th or table headings are bold elements amongst other things, they stand out
+                tr table row are rows of a table
+                td table data is information in a table, many td within a tr are colums -->
+                <tr>
+                    <th><b><span class="headingtag">Objective/Task/Activity</span></b></th>
+                    <th><b><span class="headingtag">How would you accomplish this?</span></b></th>
+                </tr>
+
+                <tr class="font" >
+                    <td>Academic achievement</td>
+                    <td> I want to achieve above 70% for all my assessments.</td>
+                </tr>
+
+                <tr class="font">
+                    <td>Organizational and study skills</td>
+                    <td>I want to stay ahead of my classwork, to ensure this I will actively look at the lesson plan before I attend the lesson.</td>
+                </tr>
+
+                <tr class="font">
+                    <td>Leadership skills</td>
+                    <td>In groups I will aim to be as vocal as possible and take leadership when an opportunity arises. Leading a group will help me work on my Teamwork skills</td>
+                </tr>
+
+                <tr class="font">
+                    <td>Teamwork</td>
+                    <td>I will encourage every member to take part and ensure that each person contributes evenly so that the task is completed to full potential</td>
+                </tr>
+
+                <tr class="font">
+                    <td>Presentaion and communication<br> skills</td>
+                    <td>To work on these skills, I will practice in front of colleagues and friends. I will ask for positive feedback and make changes accordingly to improve my presentation as well as communicate my point better		</td>
+                </tr>
+
+            </div>
+        </table>
+
+    </div>
+    <br>
+    <br>
 
 </body>
 </html>

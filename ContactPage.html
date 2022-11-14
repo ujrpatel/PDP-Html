@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- defining the HTML basics, setting the webpage icon, character set and calling the Css file -->
 <head>
     <link rel="stylesheet" href="Stylepage_Css.css">
     <link rel="icon" href="UniOfLeicesterCrest.svg">
@@ -10,13 +11,21 @@
 
 <body>
 
+<!-- headers contain naviational tags or introductory elements -->
 <header>
 
     <div class="navigation">
+        <!-- 
+            defining the logo and characteristics
+             'a' tag has a 'href' element, this links to the main landing page when pressed
+         -->
         <a href="LandingPage.html"><img src="RedBlockUoLlogo.jpg" title="University Of Leicester" alt="UOL_Logo" class="Logo" width="200" height="auto"></a>
         <h1 id="PDP_title">Contact Me</h1>
+
+        <!-- an unordered list for the navigation menu nav defines navigation links-->
         <nav>
             <ul>
+                <!-- each link is allocated to an HTML file which loads a differnt page, 'a' tags are used for hyperlinks and file references -->
                 <li><a href="LandingPage.html">Home</a></li>
                 <li><a href="PDPPage.html">PDP</a></li>
                 <li><a href="MapPage.html">Map</a></li>
@@ -26,8 +35,48 @@
     </div>
 
 </header>
-<h1>ContactPage</h1>
 
+    <h1>ContactPage</h1>
 
+    <!-- a form tag is used to create a user input, here it is used for sending data
+    to a server for processing -->
+    <!-- form submit is a website that allows to send email feedback to an email
+    it is opensource and free to use, it is configured for an autoresponse -->
+        <form action="https://formsubmit.co/udaypatel.extra@gmail.com" method="POST">
+            <input type="hidden" name="_autoresponse" value="Hey, thanks for your email your feedback is greately appreciated!">
+
+            <!-- labels are associated with an attribute, they can influence 
+            some characteristics, 'for' is an example of this, the matching value 
+        is selected when the label is pressed -->
+            <div class="contactme">
+                <label title="FirstName" for="firstname">First Name:</label>
+                <input id="firstname" class="inputborder" type="text" name="firstname" placeholder="First Name">
+                
+                <label title="LastName" for="lastname">Last Name:</label>
+                <input id="lastname" class="inputborder" type="text" name="lastname" placeholder="Last Name">
+                <br><br>
+
+                <label title="Your Email Adderess" for="email">Email:</label>
+                <input id="email" class="inputborder" type="text" name="email" placeholder="Your email">
+                <br><br>
+                
+                <div title="Enter your Comment" class="commentbox">
+                <label for="Comment">Comment:-</label><br>
+                
+                <!-- text area is a space for user input, placeholder is a name 
+                that is displayed when there is no text input from the user -->
+                <textarea id="comment"  name="comment" rows="7" cols="65" placeholder="Comment here... (max 500 characters)" maxlength="500"></textarea>
+                </div>
+                
+                
+
+            </div><br>
+
+            <!-- button is used for an action here it sends a request to the server -->
+            <div title="Send your feedback!" class="sendbtnpos">
+                <button type="submit" class="sendbtn">Send</button>
+            </div>
+            
+        </form>
 </body>
 </html>
