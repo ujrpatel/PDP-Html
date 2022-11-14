@@ -99,7 +99,7 @@ nav li {
 
 nav ul li a {
     color: #e5eaf5;
-    text-transform: uppercase;
+    text-transform: uppercase;/*makes */
     text-decoration: none;
 }
 
@@ -283,7 +283,7 @@ the code is custom but referenced: https://codepen.io/christophwessels/pen/YbbaE
 
 .sendbtn {
     appearance: none;
-    cursor: pointer;
+    cursor: pointer;/*ensures that cursor is visable when you are hovering over the element*/
     padding: 12px;
     min-width: 100px;
     border: 0px;

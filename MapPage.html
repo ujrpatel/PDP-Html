@@ -46,19 +46,21 @@
 
 // function is used for getting map data
 // @throws error with linking api , it was fixed with static coordinates
-function myMap() {
-    var mapProp= {
+function my_Map() {
+    var mapload= {
     center:new google.maps.LatLng(52.62112972367237, -1.1245660060498661),
-    zoom:15,
+    zoom:15, //configured to center around UOL campus 
     };
 
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    // Document.getElementById(‘’) returns an element whose id property matches the specified string; in this
+    //  case it displays the map according to the specified attributes. 
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapload);
 }
 
 </script>
 <!-- my google map api key is linked here, its unique and i can trace all the 
-times that it has been called -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASd4yHbYMhEoWKZLK34j_2SJkrsJ6go5Y&callback=myMap"></script>
+times that it has been called. I used this when the function didn’t accept the parameters and threw errors.-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASd4yHbYMhEoWKZLK34j_2SJkrsJ6go5Y&callback=my_Map"></script>
 </script>
 
 
