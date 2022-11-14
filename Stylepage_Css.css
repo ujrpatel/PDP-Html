@@ -103,11 +103,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* the hover pseudo class here interacts with an element, typically 
+the mouse when it hovers over it. in this case it changes the colour of
+the text to black when the cursor hovers over it*/
 nav ul li a:hover {
     color: #000;
 }
 
-/* this is the sliding bar animation when you hover on nav bar*/
+/* this is the sliding bar animation when you hover on nav bar
+the psueudo class ::before is used to add cosmetic value to an element
+it is used before the content/ element that it is used on */
 nav ul li a::before {
     content: '';
     display: block;
@@ -117,7 +122,10 @@ nav ul li a::before {
     position: absolute;
     top: 100%;
     width: 0%;
-    transition: all ease-in-out 100ms;
+    transition: all ease-in-out 100ms;/*all means to apply to all changed properties
+    ease in out is a transistion property, this is how the change happens
+    the 100ms refers to the time in which the action occurs
+    */
 }
 
 nav ul li a:hover::before {
@@ -243,7 +251,7 @@ table {
     background-color: #845883;
     border: 3px solid black;
     border-radius: 10px;
-    border-collapse: collapse;/*hides all individual borders for each
+    border-collapse: collapse; /*hides all individual borders for each
     element, gives a clean seamless look*/
 }
 
@@ -264,14 +272,15 @@ table {
     padding-top: 20px;
     padding-bottom: 14px;
     margin: auto;
-    width: 28%;
-    text-align: center;
+    width: 30%;
+    text-align: left;
 }
 
 /* '#' is used when you reference id tag instead of class*/
 #comment {
     resize: none;
     border-radius: 8px;
+    width: 98%;
 }
 
 /*the position of the button on the screen;
@@ -305,3 +314,9 @@ the code is custom but referenced: https://codepen.io/christophwessels/pen/YbbaE
     color: #e5eaf5;
 }
 
+.inputborder {
+    width: 98%;
+    margin: auto;
+    padding: auto;
+
+}
