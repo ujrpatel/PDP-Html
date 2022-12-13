@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- defining the HTML basics, setting the webpage icon, character set and calling the Css file -->
+<head>
+    <link rel="stylesheet" href="Stylepage_Css.css">
+    <link rel="icon" href="UniOfLeicesterCrest.svg">
+    <meta charset="UTF-8">
+    <Title>Uday's PDP</Title>
+</head>
+
+
+<body>
+
+<!-- headers contain naviational tags or introductory elements -->
+<header>
+
+    <div class="navigation">
+        <!-- defining the logo and characteristics -->
+        <img src="RedBlockUoLlogo.jpg" title="University Of Leicester" alt="UOL_Logo" class="Logo" width="200" height="auto">
+        <h1 id="PDP_title">HomePage</h1>
+        
+        <!-- an unordered list for the navigation menu nav defines navigation links-->
+        <nav>
+            <ul>
+                <!-- each link is allocated to an HTML file which loads a differnt page, 'a' tags are used for hyperlinks and file references -->
+                <li><a title="Homepage" href="LandingPage.html">Home</a></li>
+                <li><a title="Personal Development Plan" href="PDPPage.html">PDP</a></li>
+                <li><a title="Map" href="MapPage.html">Map</a></li>
+                <li><a title="Contact Me Page" href="ContactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+    <h1>Welcome to Uday's HomePage</h1>
+    <img title="University of Leicester Building" class="Uolpiccenter" src="UOLBuilding.jpg" alt="University of Leicester Building" >
+    
+    <h2  title="About Me" class="h1position">About Me<br></h2>
+        <!-- div elements are attributes related to a group -->
+        <div class="aboutme">
+            <p class="font">Hi there, my name is Uday and I am a student at University of 
+                Leicester. This is my Personal Development Plan (PDP) and what steps 
+                I have taken to accomplish my goals. I studied Computer Science at 
+                GCSE and A-Level and my interest in the subject has been evolving 
+                since. In my spare time I like to do leetcode questions and watching 
+                Formula 1 highlights.
+            </p>
+        </div><br>
+    <!-- title shown when the mouse hovers over it , the class references a variable in Css that controls how it looks and is displayed -->
+    <h2 title="About this Project" class="h2position">About this project</h2>
+    
+        <div  class="aboutproject">
+            <!-- the font tag is used here, it is an alternte font to the main font described in the body tag inside Css -->
+            <p class="font"> This website is fully interative and all elements work as intended.
+                I have used an free-to-use platform called FormSubmimt to handle my email 
+                forwarding in my Contact-me page. If the user enters their email then they will 
+                recieve a reply email. The Map page is intended for users to to be able 
+                to look at the University of Leicester's Campus. My PDP is simplified for
+                viewing pleasure and ease of reading. This project provided a good look into
+                HTML, CSS and Java. 
+
+            </p>
+            
+        </div>
+    
+<!-- every HTML file is ended with the closing HTML tag, every open tag must be closed -->
+</body>
+</html>
